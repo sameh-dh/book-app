@@ -2,14 +2,27 @@ const express = require("express");
 const app = express();
 const BookModel=require("./books")
 const mongoose = require("mongoose");
+const  bodyParser = require('body-parser')
 
 const cors = require("cors");
+//connect to mongo alts database
 mongoose.connect(
-  "mongodb+srv://samehdh:samehdh123@cluster0.8cq1msh.mongodb.net/book?retryWrites=true&w=majority"
+  "mongodb+srv://samehdh:samehdh123@cluster0.8cq1msh.mongodb.net/book?retryWrites=true&w=majority", { useNewUrlParser: true }).then(
+    () => { console.log('Database is connected') },
+    err => { console.log('There is problem while connecting database ' + err) }
+    
 );
+mongoose.Promise = global.Promise;
 app.use(express.json());
 app.use(cors());
-// get all books
+//convert data to json format
+app.use(bodyParser.json());
+//home page
+app.get('/', function (req, res) {
+    resww("Book app")
+});
+
+// get all books page
 app.get("/getBooks", (req, res) => {
   BookModel.find({}, (err, result) => {
     
