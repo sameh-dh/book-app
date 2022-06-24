@@ -1,0 +1,45 @@
+
+   [ {
+"bookName": "How to Ikigai",
+"author": "Tim Tamashiro",
+"description": "We're all for looking to ancient tried and tested methods of reaching enlightenment, and it sounds like Ikigai might be for us. This book explores the lifestyle choice of those from Okinawa - a small island south of Japan where people live their life's purpose every day. After reading this you'll leave about how to look at happiness in a completely different way.",
+"price": "£10.99"
+},
+{
+    "bookName": "Get Your Sh*t Together",
+    "author": "by Sarah Knight",
+    "description": "Ignore the slightly tongue-in-cheek title for one moment, because this book will help you, once and for all, figure out how to leave your emails at the office and truly nail that work/life balance.",
+    "price": "£10.82"
+    },
+    {
+        "bookName": "Good Vibes, Good Life: How Self-Love Is the Key to Unlocking Your Greatness",
+        "author": "Hay House UK Ltd",
+        "description": "This is an essential read if you want to learn how to put your wellbeing above everything else in life. King's words will help you change the way you think, feel and act in life, whether it's learning how to practise self-care and reject toxic energy and manifest your goals and dreams.",
+        "price": "Hay House UK Ltd"
+        },
+        {
+            "bookName": "The 5 AM Club: Own Your Morning. Elevate Your Life.",
+            "author": "Robin Sharma",
+            "description": "Revolutionise your day - and life - with Sharma's knowledge which, in this books, boils down to the importance of rising early at 5am to make the most of your day, mental wellbeing and productivity. Simply put, you should start your day with the 20/20/20 rule: spending 20 minutes for exercise, reflection and learning each.",
+            "price": "£11.99"
+            },
+            {
+                "bookName": "You Are Powerful: The Secret to Everyday Manifestation (Now Age series)",
+                "author": "Becki Rabin",
+                "description": "Manifestation sounds incredible on the tin, but when you lift the lid on the practice it can - at first - seem quite daunting. That's where this book comes in. Written by empowerment coach Becki Rabin, You Are Powerful explores the 10 main principles of manifestation that will help you get on the path to changing your life for good.",
+                "price": "£8.09"
+                },
+                {
+                    "bookName": "Self-Love Workbook for Women: Release Self-Doubt, Build Self-Compassion, and Embrace Who You Are",
+                    "author": "Megan Logan",
+                    "description": "Learn how to focus on your emotional wellbeing and finally navigate your emotions to become a more grounded, confident and content woman. Written by therapist Logan, you'll get to grips with therapeutic tools and understand how to complete exercises to better develop a positive frame of mind.",
+                    "price": "£11.41"
+                    },
+                    {
+                        "bookName": "The Wim Hof Method: Activate Your Potential, Transcend Your Limits",
+                        "author": "Wim Hof ",
+                        "description": "Written by the legend that's known for breaking records by facing extreme temperatures and running barefoot marathons over deserts and ice fields, this is the perfect book for anyone wanting to learn how to push past their limits, improve their health and performance and feel happier. (Ice baths are optional).",
+                        "price": "£9.99"
+                        }
+
+]
