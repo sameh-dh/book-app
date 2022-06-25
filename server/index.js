@@ -19,12 +19,12 @@ app.use(cors());
 app.use(bodyParser.json());
 //home page
 app.get('/', function (req, res) {
-    resww("Book app")
+    res.send("Book app")
 });
 
 // get all books page
-app.get("/getBooks", (req, res) => {
-  BookModel.find({}, (err, result) => {
+app.get("/getBooks",   (req, res) => {
+BookModel.find({}, (err, result) => {
     
     if (err) {
       res.json(err);
@@ -33,6 +33,7 @@ app.get("/getBooks", (req, res) => {
     }
   });
 });
+
 //add new book
 app.post("/createBook", async (req, res) => {
   const book = req.body;
