@@ -24,6 +24,8 @@ const [books,setBooks]=useState([])
             return  <div key={key} className="book" >
                 <h1>{val.bookName}</h1>
                 <h1>{val.author}</h1>
+                <h1>{val.description}</h1>
+                <h1>{val.price}</h1>
               </div>
             })}
           </div> )

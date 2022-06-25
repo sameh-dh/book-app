@@ -42,6 +42,16 @@ app.post("/createBook", async (req, res) => {
 
   res.json(book);
 });
+
+//delete book and call it by id
+app.delete("/deleteBook/:id", async(req,res)=>{
+  const id =req.params.id
+  await BookModel.findByIdAndDelete(id,).exec();
+  res.send('item deleted')
+}
+)
+
+
 app.listen(3002, () => {
   console.log("SERVER RUNS PERFECTLY!");
 });
@@ -49,17 +59,6 @@ app.listen(3002, () => {
 
 
 
-const conn = mongoose.connection;
 
-// // Check for DB connection
-// conn.once('open', function(){
-//     console.log("Connected to MongoDB successfully!");
-// });
-// conn.on('error', function(){
-//     console.log(err);
-// });
 
-// // Route for home
-// app.get('/', function (req, res) {
-//     res.send('hello world')
-// });
+
