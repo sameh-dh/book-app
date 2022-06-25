@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+body{
+  /* background-image: url("https://images.unsplash.com/photo-1510172951991-856a654063f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
+  /* background-size: cover; */
+  background-color: #f1e6e3;
+  display: block;
+}
+/* home page */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  float: left;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li .btn {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 630px;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  height: 90px;
+
+}
+li .btn:hover {
+  background-color: #111;
+  color: white
 }
 
-.App-link {
-  color: #61dafb;
+/* show books and delete books*/
+.container{
+  
+  padding: 20px;
+}
+.book{
+  background-color:#746C70;
+  width: 500px;
+  height: fit-content;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+margin-top: 70px;
+margin-left: 30px;
+}
+.book h1{
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size:25px;
+}
+span{
+  color:#5C4E4E;
+  text-align: left;
+  padding: 0;
+}
+/* delete button */
+.delete-btn{
+  width: 100%;
+  height: 50px;
+  background-color:#635457 ;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #F6EEF0;
+  text-shadow: 3px 2px 4px #000000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* add book css */
+input[type=text], select,.price {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+label{
+  color: #171112;
+  text-shadow: 3px 2px 4px #575353;
+  font-size: 30px;
+  text-align: center;
+  
+}
+.btn-add{
+  margin-left: 44%;
+  background-color:#635457 ;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #F6EEF0;
+  text-shadow: 3px 2px 4px #000000;
+  height: 70px;
+  width: 300px;
+}
+/* title book list */
+h1{
+  text-align: center;
+  color: #b2929b;
+  text-shadow: 3px 2px 4px #574d4d;
+  font-size: 50px;
 }

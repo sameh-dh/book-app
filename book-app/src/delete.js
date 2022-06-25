@@ -19,10 +19,10 @@ function Delete(){
 <h1>Book List</h1>
 {bookss.map((val,key) => {
             return  <div key={key} className="book" >
-                <h1>{val.bookName}</h1>
-                <h1>{val.author}</h1>
-                <h1>{val.description}</h1>
-                <h1>{val.price}</h1>
+            <h1><span>Book name: </span>{val.bookName}</h1>
+                <h1><span>Author:</span> {val.author}</h1>
+                <h1><span>Description:</span> {val.description}</h1>
+                <h1><span>Price: </span> {val.price}</h1>
               
     <button  className='delete-btn'onClick={() =>{console.log(val._id) 
         return deleteBook(val._id)}}>Delete</button>

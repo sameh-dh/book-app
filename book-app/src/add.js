@@ -27,8 +27,8 @@ return (
 <label htmlFor="">Book Description </label>          
 <input type="text" onChange={(e) => {setDescription(e.target.value)}}/><br/><br/>          
 <label htmlFor="">Price </label>
-<input type="number" onChange={(e) => {setPrice(e.target.value)}}/><br/><br/>         
- <button onClick={()=>addNewBook()}>Add New Book</button>
+<input className="price" type="number" onChange={(e) => {setPrice(e.target.value)}}/><br/><br/>         
+ <button className="btn-add" onClick={()=>addNewBook()}>Add New Book</button>
   </div>    
 )}
 

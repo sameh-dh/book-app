@@ -4,7 +4,7 @@ import Axios from "axios";
 import Add from "./add";
 import Show from "./showBooks";
 import Delete from "./delete";
-function HomePage(props){
+function HomePage(){
     //counter for pages
     const [page,setPage]=useState(0);
     //array of page titles
@@ -22,22 +22,20 @@ function HomePage(props){
     }
     return(
 <div className="home">
-    <nav><button onClick={() => {
+    <ul><li><button className="btn" onClick={() => {
      
               setPage((currPage) =>currPage=0);
-            }}>Show All Books</button>
-<button onClick={() => {
+            }}>Show All Books</button></li>
+<li><button className="btn" onClick={() => {
               setPage((currPage) =>currPage=1);
-            }}>Add new Book</button>
- <button onClick={() => {
+            }}>Add new Book</button></li>
+ <li><button className="btn" onClick={() => {
               setPage((currPage) =>currPage=2);
-            }}>Delete Book</button>
-            </nav>
+            }}>Delete Book </button></li>
+            
+            </ul>
 <div className="container">
     
-<div className="header">
-    <h1>{pageTitles[page]}</h1>
-</div>
 <div className="body">{PageDisplay()}
 <div className="footer">
 
