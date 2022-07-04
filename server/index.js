@@ -46,7 +46,7 @@ app.post("/createBook", async (req, res) => {
 //delete book and call it by id
 app.delete("/deleteBook/:id", async(req,res)=>{
   const id =req.params.id
-  await BookModel.findByIdAndDelete(id,).exec();
+  await BookModel.findByIdAndDelete(id).exec();
   res.send('item deleted')
 }
 )
